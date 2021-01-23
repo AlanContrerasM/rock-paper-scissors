@@ -1,0 +1,78 @@
+html, body, main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color:white;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: .5em;
+    gap: .8em;
+    grid-template-columns: auto 60% auto;
+    grid-template-rows: 1fr 1fr 3fr 2fr;
+    grid-template-areas: "header header header"
+                            "inst inst inst"
+                            ". options ."
+                            "playerS result computerS";
+}
+
+.item{
+    background-color: #252525;
+    /* border: 5px solid white; */
+    
+    /*center everything inside*/
+    display:grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.option{
+    background-color: #252525;
+    border: 5px solid white;
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.option:hover{
+    box-shadow: 0em 0em .8em;
+    background-color: #3e8e41;
+
+}
+
+
+h1{
+    grid-area: header;
+}
+h2{
+    grid-area: inst;
+}
+#options{
+    background-color: transparent;
+    grid-area: options;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: .8em;
+    padding: .5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+}
+#playerS{
+    grid-area: playerS;
+}
+#computerS{
+    grid-area: computerS;
+}
+
+/* .transparent{
+    display: none;
+} */
+
+#result{
+    grid-area: result;
+}

@@ -1,6 +1,18 @@
 console.log("Hello World from file scripts.js");
 console.log("Building a basic rock paper scissors game");
 
+//select option divs and create Event listeners
+
+let optionDivs = document.querySelectorAll(".options");
+
+
+
+
+
+
+
+
+
 //create computerPlay function no params
 //returns either rock paper or scissors lowercase
 function getComputerPlay(){
